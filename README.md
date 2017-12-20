@@ -122,6 +122,7 @@ o	IGNORE any attempt to include a parked car in a race.
 4.	SINGLE car CAN participate in MANY races.
 
 5.	A race CANNOT start without ANY participants.
+
 6.	A race CAN start with LESS than three participants.
 Performance points (PP) determine every race’s winners. PP are either Overall Performance, Engine Performance or Suspension Performance. Here are the different formulas:
 
@@ -141,14 +142,17 @@ If TWO cars have the SAME result, participant registered before the other comes 
 The 1st place winner takes 50 % of the race’s prize pool.
 The 2nd place winner takes 30 % of the race’s prize pool.
 The 3rd place winner takes 20 % of the race’s prize pool.
+
 You need to take in account ONLY the FIRST 3 players, AFTER you’ve ordered them in descending order, by the corresponding criteria.
 In case a race has LESS than 3 participants, you should print only them, as winners. The prizes remain the SAME.
 In case a race has NO participants, you should print “Cannot start the race with zero participants.”, and IGNORE the command.
 Task III: I / O (Input / Output)
 Input
 •	The input will come in the form of commands, in the format specified above.
+
 •	The input sequence ends when you receive the command “Cops Are Here”.
 Output
+
 Two elements generate output in the program’s functionality:
 
 •	The “check” command should RETURN a String representation of the CAR with the GIVEN ID:
@@ -158,7 +162,9 @@ o	 {horsepower} HP, 100 m/h in {acceleration} s
 o	 {suspension} Suspension force, {durability} Durability”
 
 o	If the car is a PerformanceCar, you must print “Add-ons: {add-ons}”, on the last line – each add-on separated by a comma and a space “, “. In case there are NO add-ons, print “None”.
+
 o	If the car is a ShowCar, you must print “{stars} *”, on the last line.
+
 •	The “start” command should RETURN a String representation the RACE with the GIVEN ID:
 
 o	“{route} - {length}
@@ -170,11 +176,19 @@ o	1, 2 and 3 – being the 1st, 2nd and 3rd participants (the winners).
 o	If there are LESS than 3 participants, print as much as there are.
 o	In case there are NO participants, print “Cannot start the race with zero participants.”, and IGNORE the command.
 Constrains
+
 •	All integers in the input will be in range [0, 100000].
+
 •	All strings in the input may consist of any ASCII character, except SPACE
+
 o	So that the input is easily processed.
+
 •	There will be NO invalid input lines, or invalid (non-existent) Ids.
+
 •	Note that throughout the program, you are working ONLY with INTEGERS.
+
 o	Each mathematical or logical action performed on numeric data, should be performed between INTEGERS.
+
 •	Note: 50% of X is EQUAL to (X * 50) / 100.
+
 •	Note: Decrease means DECREASE… 100 decreased by 25% = 100 – (100 * 25) / 100 = 100 – 25 = 75.
